@@ -1,7 +1,9 @@
+"use client";
 
 import React from "react";
 import HeroRight from "./HeroRight";
 import { Poppins } from "next/font/google";
+import { motion } from "framer-motion";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,7 +13,12 @@ const poppins = Poppins({
 export default function Hero() {
   return (
     <div className="w-full p-2 flex flex-col md:flex-row justify-between items-center gap-3 my-3">
-      <div className="w-full md:w-auto px-4 md:px-0">
+      <motion.div
+        initial={{ opacity: 0, left: -50, filter: "blur(5px)" }}
+        animate={{ opacity: 1, left: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="w-full md:w-auto px-4 md:px-0"
+      >
         <div className="text-center md:text-left">
           <h1
             className={`font-bold text-[#555770] text-[40px] md:text-[64px] leading-[45px] md:leading-[60px] ${poppins.className}`}
@@ -38,10 +45,15 @@ export default function Hero() {
             GET A QUOTE
           </button>
         </div>
-      </div>
-      <div className="relative mt-8 md:mt-0">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, left: 50, filter: "blur(5px)" }}
+        animate={{ opacity: 1, left: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="relative mt-8 md:mt-0"
+      >
         <HeroRight />
-      </div>
+      </motion.div>
     </div>
   );
 }

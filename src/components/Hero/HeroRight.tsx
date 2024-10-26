@@ -6,7 +6,7 @@ import CirclePatternSVG from "./CirclePatternSVG";
 import { useState, useEffect } from "react";
 
 export default function HeroRight() {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -63,6 +63,9 @@ export default function HeroRight() {
         const pos = getCirclePosition(angle.deg);
         return (
           <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.5 + index * 0.3 }}
             key={index}
             className="absolute top-[51%] left-[51%]"
             style={{

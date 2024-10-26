@@ -1,5 +1,8 @@
+"use client"
+
 import React from "react";
 import { Raleway } from "next/font/google";
+import { motion } from "framer-motion";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -8,9 +11,19 @@ const raleway = Raleway({
 
 export default function Features() {
   return (
-    <div className="w-full min-h-[150dvh] md:h-[150dvh] flex justify-center items-center">
+    <motion.div 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="w-full min-h-[150dvh] md:h-[150dvh] flex justify-center items-center"
+    >
       <div className="rounded-[56px] w-full p-4 md:p-10 md:py-5 relative">
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
           className="absolute inset-0 rounded-[56px]"
           style={{
             background:
@@ -21,13 +34,23 @@ export default function Features() {
           }}
         />
         <div className="relative">
-          <h2
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
             className={`${raleway.className} text-[#003966] text-center text-2xl md:text-4xl leading-[34px] md:leading-[44px] font-semibold my-5 md:my-10`}
           >
             Enabling the real-time Data Business
-          </h2>
+          </motion.h2>
           <div className="relative flex flex-col md:block gap-4">
-            <div className="relative p-3 rounded-[15px] w-full md:max-w-[48%] bg-gradient-to-r from-[#DFE0E6] to-[rgba(235,236,240,0)]">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.7 }}
+              className="relative p-3 rounded-[15px] w-full md:max-w-[48%] bg-gradient-to-r from-[#DFE0E6] to-[rgba(235,236,240,0)]"
+            >
               <div
                 className="absolute inset-0 rounded-[15px]"
                 style={{
@@ -51,8 +74,14 @@ export default function Features() {
                   explicabo culpa corporis, incidunt ducimus? Velit, quia?
                 </p>
               </div>
-            </div>
-            <div className="relative p-3 rounded-[15px] w-full md:max-w-[48%] bg-gradient-to-r from-[#DFE0E6] to-[rgba(235,236,240,0)] md:ml-auto md:bottom-[15px]">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.9 }}
+              className="relative p-3 rounded-[15px] w-full md:max-w-[48%] bg-gradient-to-r from-[#DFE0E6] to-[rgba(235,236,240,0)] md:ml-auto md:bottom-[15px]"
+            >
               <div
                 className="absolute inset-0 rounded-[15px]"
                 style={{
@@ -76,10 +105,10 @@ export default function Features() {
                   explicabo culpa corporis, incidunt ducimus? Velit, quia?
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
