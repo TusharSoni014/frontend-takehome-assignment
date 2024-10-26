@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import CirclePatternSVG from "./CirclePatternSVG";
@@ -55,7 +56,7 @@ export default function HeroRight() {
         aspect-square rounded-full shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25),-0px_-3px_4px_0px_rgba(255,255,255,1)] 
         flex justify-center items-center`}
       >
-        <CirclePatternSVG />
+        <CirclePatternSVG windowWidth={windowWidth} />
       </div>
 
       {angles.map((angle, index) => {

@@ -1,10 +1,12 @@
+"use client"
+
 import React from "react";
 
-export default function CirclePatternSVG() {
+export default function CirclePatternSVG({windowWidth}:{windowWidth:number}) {
   return (
     <svg
-      width={window.innerWidth <= 768 ? "122.5" : "245"}
-      height={window.innerWidth <= 768 ? "130.5" : "261"}
+      width={windowWidth <= 768 ? "122.5" : "245"}
+      height={windowWidth <= 768 ? "130.5" : "261"}
       viewBox="0 0 245 261"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
