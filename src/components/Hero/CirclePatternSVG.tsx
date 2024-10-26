@@ -3,8 +3,8 @@ import React from "react";
 export default function CirclePatternSVG() {
   return (
     <svg
-      width="245"
-      height="261"
+      width={window.innerWidth <= 768 ? "122.5" : "245"}
+      height={window.innerWidth <= 768 ? "130.5" : "261"}
       viewBox="0 0 245 261"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

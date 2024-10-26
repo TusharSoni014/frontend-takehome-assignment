@@ -8,8 +8,8 @@ const raleway = Raleway({
 
 export default function Features() {
   return (
-    <div className="w-full h-[150dvh] flex justify-center items-center">
-      <div className="rounded-[56px] w-full p-10 py-5 relative">
+    <div className="w-full min-h-[150dvh] md:h-[150dvh] flex justify-center items-center">
+      <div className="rounded-[56px] w-full p-4 md:p-10 md:py-5 relative">
         <div
           className="absolute inset-0 rounded-[56px]"
           style={{
@@ -22,12 +22,12 @@ export default function Features() {
         />
         <div className="relative">
           <h2
-            className={`${raleway.className} text-[#003966] text-center text-4xl leading-[44px] font-semibold my-10`}
+            className={`${raleway.className} text-[#003966] text-center text-2xl md:text-4xl leading-[34px] md:leading-[44px] font-semibold my-5 md:my-10`}
           >
             Enabling the real-time Data Business
           </h2>
-          <div className="relative">
-            <div className="relative p-3 rounded-[15px] max-w-[48%] bg-gradient-to-r from-[#DFE0E6] to-[rgba(235,236,240,0)]">
+          <div className="relative flex flex-col md:block gap-4">
+            <div className="relative p-3 rounded-[15px] w-full md:max-w-[48%] bg-gradient-to-r from-[#DFE0E6] to-[rgba(235,236,240,0)]">
               <div
                 className="absolute inset-0 rounded-[15px]"
                 style={{
@@ -38,13 +38,13 @@ export default function Features() {
                   padding: "2px",
                 }}
               />
-              <div className=" rounded-[15px] p-3">
+              <div className="rounded-[15px] p-3">
                 <h4
-                  className={`${raleway.className} font-semibold text-2xl text-[#212121] leading-8`}
+                  className={`${raleway.className} font-semibold text-xl md:text-2xl text-[#212121] leading-7 md:leading-8`}
                 >
                   Ingestion
                 </h4>
-                <p className="leading-[18.75px] mt-2.5">
+                <p className="text-sm md:text-base leading-[18.75px] mt-2.5">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Mollitia recusandae minima nulla quis, praesentium quas
                   voluptates blanditiis quam laboriosam pariatur at fuga aliquid
@@ -52,7 +52,7 @@ export default function Features() {
                 </p>
               </div>
             </div>
-            <div className="relative p-3 rounded-[15px] max-w-[48%] bg-gradient-to-r from-[#DFE0E6] to-[rgba(235,236,240,0)] ml-auto bottom-[15px]">
+            <div className="relative p-3 rounded-[15px] w-full md:max-w-[48%] bg-gradient-to-r from-[#DFE0E6] to-[rgba(235,236,240,0)] md:ml-auto md:bottom-[15px]">
               <div
                 className="absolute inset-0 rounded-[15px]"
                 style={{
@@ -63,13 +63,13 @@ export default function Features() {
                   padding: "2px",
                 }}
               />
-              <div className=" rounded-[15px] p-3">
+              <div className="rounded-[15px] p-3">
                 <h4
-                  className={`${raleway.className} font-semibold text-2xl text-[#212121] leading-8`}
+                  className={`${raleway.className} font-semibold text-xl md:text-2xl text-[#212121] leading-7 md:leading-8`}
                 >
                   Transformation
                 </h4>
-                <p className="leading-[18.75px] mt-2.5">
+                <p className="text-sm md:text-base leading-[18.75px] mt-2.5">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Mollitia recusandae minima nulla quis, praesentium quas
                   voluptates blanditiis quam laboriosam pariatur at fuga aliquid
