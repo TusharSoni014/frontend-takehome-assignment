@@ -1,5 +1,5 @@
 import Features from "@/components/Features/Features";
-import Header from "@/components/Hero/Header";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero/Hero";
 import Partners from "@/components/Partners/Partners";
 import Pattern from "@/components/Pattern";
