@@ -9,7 +9,7 @@ export default function Header() {
     { href: "#", label: "About Us", isActive: false },
   ];
   return (
-    <header className="border-2 border-white h-[83px] rounded-full flex justify-between items-center shadow-[-6px_-7px_11px_0px_rgba(255,255,255,0.84),_8px_7px_21px_0px_rgba(0,0,0,0.15)]">
+    <header className="sticky top-[30px] w-full max-w-7xl border-2 border-white h-[83px] rounded-full flex justify-between items-center shadow-[-6px_-7px_11px_0px_rgba(255,255,255,0.84),_8px_7px_21px_0px_rgba(0,0,0,0.15)] bg-gradient-to-r from-[#E8EAF1] from-[2.4%] to-[rgba(235,236,240,0)] to-[98.82%] backdrop-blur-md z-50">
       <div className="rounded-full h-full aspect-square flex justify-center items-center overflow-hidden">
         <Image
           src="/logo.png"
