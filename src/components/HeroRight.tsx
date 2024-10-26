@@ -22,7 +22,7 @@ export default function HeroRight() {
   ];
 
   return (
-    <div className="h-[500px] aspect-square rounded-full relative right-[-150px] shadow-[inset_-2px_-4px_4px_0px_rgba(255,255,255,1),inset_0px_3px_4px_0px_rgba(0,0,0,0.25)] ">
+    <div className="h-[500px] aspect-square rounded-full relative right-[-200px] shadow-[inset_-2px_-4px_4px_0px_rgba(255,255,255,1),inset_0px_3px_4px_0px_rgba(0,0,0,0.25)] ">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[470px] aspect-square rounded-full shadow-[2px_4px_4px_0px_rgba(0,0,0,0.25),-0px_-3px_4px_0px_rgba(255,255,255,1)] flex justify-center items-center">
         <CirclePatternSVG />
       </div>

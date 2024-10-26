@@ -24,10 +24,10 @@ export default function Header() {
           <a
             key={link.label}
             href={link.href}
-            className={`text-black font-semibold ${
+            className={`text-black font-semibold relative ${
               link.isActive
-                ? "bg-[#EBECF0]  p-1 px-2 rounded-full shadow-[5px_5px_2px_0px_rgba(0,0,0,0.12)_inset,_-4px_-4px_4px_0px_rgba(255,255,255,1)_inset]"
-                : ""
+                ? "bg-[#EBECF0] p-1 px-2 rounded-full shadow-[5px_5px_2px_0px_rgba(0,0,0,0.12)_inset,_-4px_-4px_4px_0px_rgba(255,255,255,1)_inset]"
+                : "after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
             }`}
           >
             {link.label}
@@ -35,7 +35,7 @@ export default function Header() {
         ))}
       </nav>
       <div className="mr-5">
-        <button className="h-[50px] bg-[#959391] text-white rounded-full px-10 shadow-[6px_5px_10px_3px_#3636363D,_-8px_-8px_10px_0px_#FFFFFF] font-bold">
+        <button className="h-[50px] bg-[#959391] text-white rounded-full px-10 shadow-[6px_5px_10px_3px_#3636363D,_-8px_-8px_10px_0px_#FFFFFF] font-bold hover:bg-[#7a7877] transition-colors duration-300">
           REGISTER NOW
         </button>
       </div>
