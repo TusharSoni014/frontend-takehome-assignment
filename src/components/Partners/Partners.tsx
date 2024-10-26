@@ -10,7 +10,7 @@ const raleway = Raleway({
 
 export default function Partners() {
   return (
-    <div className="w-full relative p-3 border border-red-500 mb-20">
+    <div className="w-full relative p-3 mb-20">
       <div className="">
         <h1
           className={`${raleway.className} font-semibold text-center text-[54px] text-black`}

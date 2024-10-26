@@ -8,7 +8,7 @@ export default function Pattern() {
       viewBox="0 0 303 778"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute left-[-100px]"
+      className="absolute left-[-100px] z-0"
     >
       <g filter="url(#filter0_ii_1_299)">
         <path
@@ -36,7 +36,7 @@ export default function Pattern() {
           width="450.017"
           height="718.254"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
@@ -89,7 +89,7 @@ export default function Pattern() {
           width="389.731"
           height="623.91"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
@@ -142,7 +142,7 @@ export default function Pattern() {
           width="338.806"
           height="544.214"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend

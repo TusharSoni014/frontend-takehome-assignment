@@ -3,6 +3,7 @@ import Header from "@/components/Hero/Header";
 import Hero from "@/components/Hero/Hero";
 import Partners from "@/components/Partners/Partners";
 import Pattern from "@/components/Pattern";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="relative">
         <Pattern />
         <Partners />
+        <Testimonials />
       </div>
     </div>
   );
