@@ -21,12 +21,12 @@ export default function Hero() {
       >
         <div className="text-center md:text-left">
           <h1
-            className={`font-bold text-[#555770] text-[40px] md:text-[64px] leading-[45px] md:leading-[60px] ${poppins.className}`}
+            className={`font-bold text-[#555770] text-[40px] md:text-[64px] leading-[45px] md:leading-[59px] ${poppins.className}`}
           >
             The Web3
           </h1>
           <h1
-            className={`font-bold text-[#555770] text-[40px] md:text-[64px] leading-[45px] md:leading-[60px] ${poppins.className}`}
+            className={`font-bold text-[#555770] text-[40px] md:text-[64px] leading-[45px] md:leading-[59px] ${poppins.className}`}
           >
             Data Studio
           </h1>
