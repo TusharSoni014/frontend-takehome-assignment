@@ -6,7 +6,9 @@ import CirclePatternSVG from "./CirclePatternSVG";
 import { useState, useEffect } from "react";
 
 export default function HeroRight() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(
+    window ? window.innerWidth : 1024
+  );
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
