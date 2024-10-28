@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`antialiased bg-[#EBECF0] text-[#555770] max-w-7xl mx-auto overflow-x-hidden  ${roboto.className}`}
       >

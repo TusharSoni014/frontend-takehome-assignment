@@ -6,15 +6,15 @@ import CirclePatternSVG from "./CirclePatternSVG";
 import { useState, useEffect } from "react";
 
 export default function HeroRight() {
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 1024
-  );
+  const [windowWidth, setWindowWidth] = useState(0);
   useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
     setWindowWidth(window.innerWidth);
+    const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  
 
   const getCirclePosition = (angle: number) => {
     const isMobile = windowWidth < 768;
@@ -42,6 +42,10 @@ export default function HeroRight() {
       src: "/Increase.png",
     },
   ];
+
+  if (!windowWidth) {
+    return null;
+  }
 
   return (
     <div
